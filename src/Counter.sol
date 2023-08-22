@@ -1,14 +1,22 @@
 // SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.13;
+pragma solidity ^0.8.3;
 
-contract Counter {
-    uint256 public number;
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v4.9/contracts/utils/math/SafeMath.sol";
 
-    function setNumber(uint256 newNumber) public {
-        number = newNumber;
+contract MySafeMathContract {
+    using SafeMath for uint256;
+
+    function addition(
+        uint256 a,
+        uint256 b
+    ) public payable returns (bool, uint256) {
+        return a.tryAdd(b);
     }
 
-    function increment() public {
-        number++;
+    function multiply(
+        uint256 a,
+        uint256 b
+    ) public payable returns (bool, uint256) {
+        return SafeMath.tryMul(a, b);
     }
 }
