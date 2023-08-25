@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.19;
 
-import {ERC4626, ERC20} from "solmate/src/mixins/ERC4626.sol";
+import {ERC4626, ERC20} from "solmate/mixins/ERC4626.sol";
 import {SafeCast} from "openzeppelin/utils/math/SafeCast.sol";
 import {Ownable} from "openzeppelin/access/Ownable.sol";
 

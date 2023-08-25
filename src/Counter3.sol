@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity >=0.7.0 <0.9.0;
 
-import "@openzeppelin/contracts/utils/math/SafeMath.sol";
+import "openzeppelin/utils/math/SafeMath.sol";
 
 contract Counter3 {
     using SafeMath for uint256;
