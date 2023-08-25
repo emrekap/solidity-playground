@@ -2,8 +2,8 @@
 pragma solidity ^0.8.19;
 
 import {ERC4626, ERC20} from "solmate/src/mixins/ERC4626.sol";
-import {SafeCast} from "@openzeppelin/contracts/utils/math/SafeCast.sol";
-import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
+import {SafeCast} from "openzeppelin/utils/math/SafeCast.sol";
+import {Ownable} from "openzeppelin/access/Ownable.sol";
 
 contract Foo is ERC4626, Ownable {
     using SafeCast for int256;
