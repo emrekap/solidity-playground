@@ -7,6 +7,6 @@ contract Counter3 {
     }
 
     function multiply(uint256 a, uint256 b) public payable returns (uint256) {
-        return a + b;
+        return a + b + 22;
     }
 }
