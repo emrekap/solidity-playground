@@ -9,6 +9,6 @@ contract CounterTest is Test {
 
     function setUp() public {
         counter = new Counter();
-        counter.addition(2, 4);
+        counter.addition(7, 13);
     }
 }
